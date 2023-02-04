@@ -29,23 +29,18 @@
 
   </div>
 
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Added by: {{
-    cookie_stand.owner }}</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Added by: {{ cookie_stand.owner }}</h5>
 
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Hourly Sales: {{
-    cookie_stand.hourly_sales }}</h5>
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Minimum Customers Per Hour: {{
-    cookie_stand.minimum_customers_per_hour }}</h5>
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Maximum Customers Per Hour: {{
-    cookie_stand.maximum_customers_per_hour }}</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Hourly Sales: {{ cookie_stand.hourly_sales }}</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Minimum Customers Per Hour: {{ cookie_stand.minimum_customers_per_hour }}</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Maximum Customers Per Hour: {{ cookie_stand.maximum_customers_per_hour }}</h5>
 
-  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Average Cookies Per Sale: {{
-    cookie_stand.average_cookies_per_sale }}</h5>
+  <h5 class=" flex-auto mb-2 text-md font-bold tracking-tight text-gray-900 dark:text-white">Average Cookies Per Sale: {{ cookie_stand.average_cookies_per_sale }}</h5>
 
   <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ cookie_stand.description }}</p>
 
 
-  <div class="flex items-center">
+  <!-- <div class="flex items-center">
 
     {% for i in "12345" %}
 
@@ -59,7 +54,7 @@
     </svg>
     {% endfor %}
 
-  </div>
+  </div> -->
 
 
   <a href="https://en.wikipedia.org/wiki/{{ cookie_stand.location }}"
