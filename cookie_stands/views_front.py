@@ -7,7 +7,7 @@ from .models import CookieStand
 class CookieStandListView(LoginRequiredMixin, ListView):
     template_name = "cookie_stands/cookie_stand_list.html"
     model = CookieStand
-    context_object_name = "cookie_stand"
+    context_object_name = "cookie_stands"
 
 
 class CookieStandDetailView(LoginRequiredMixin, DetailView):
