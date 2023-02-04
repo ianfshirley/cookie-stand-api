@@ -8,7 +8,17 @@
   {#    <input type="submit" value="SAVE">#}
   {#  </form>#}
 
+  <h1>Update Cookie Stand</h1>
   <div
+    class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Submit">
+    </form>
+
+  
+  <!-- <div
     class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
     <form class="space-y-6" method="POST">
       {% csrf_token %}
@@ -22,7 +32,7 @@
       </div>
       
       <div>
-        <label for="id_owner" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Reviewer</label>
+        <label for="id_owner" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Owner</label>
         <select name="owner" id="id_owner">
           {% for value, choice in form.fields.owner.choices %}
             <option value="{{ value }}" {% if value == cookie_stand.owner.id %}selected{% endif %}>{{ choice }}</option>
@@ -66,6 +76,6 @@
         SAVE
       </button>
 
-    </form>
+    </form> -->
   </div>
 {% endblock content %}
